@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+    
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+
+    	<LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="fill_parent">
+        
+    		<!-- User_Picture -->
+    		<ImageView
+				android:id="@+id/img_user_picture"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"
+				android:contentDescription="@string/contentDesc_user_picture"
+				android:src="@drawable/user_picture"
+				android:scaleType="centerCrop" />
+    	</LinearLayout>
+    
+   		<RelativeLayout
+   	    	android:layout_width="match_parent"
+        	android:layout_height="fill_parent"
+    		android:paddingLeft="16dp"
+    		android:paddingRight="16dp"
+    		android:paddingBottom="16dp"
+    		android:paddingTop="20dp"
+        	android:orientation="vertical">
+    	
+    		<!-- Firstname -->
+			<ImageView
+        		android:id="@+id/img_firstname"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:contentDescription="@string/firstname"
+        		android:src="@drawable/ic_firstname"
+        		android:layout_alignBottom="@+id/firstname" />
+    		
+    		<EditText
+   				android:id="@+id/firstname"
+    			android:layout_width="match_parent"
+   				android:layout_height="wrap_content"
+    			android:hint="@string/firstname"
+    			android:inputType="text"
+    			android:layout_toRightOf="@+id/img_firstname"
+    			android:layout_marginLeft="10dp"
+    			android:paddingRight="16dp" />
+   			<!-- Lastname -->
+    		<ImageView
+        		android:id="@+id/img_lastname"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:contentDescription="@string/lastname"
+        		android:src="@drawable/ic_lastname"
+        		android:layout_alignBottom="@+id/lastname"
+    			android:layout_marginTop="7dp" />
+    
+    		<EditText
+   				android:id="@+id/lastname"
+    			android:layout_width="fill_parent"
+   				android:layout_height="wrap_content"
+    			android:hint="@string/lastname"
+    			android:inputType="text"
+    			android:layout_below="@+id/firstname"
+    			android:layout_toRightOf="@+id/img_lastname"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginTop="7dp" />
+    
+    		<!-- Hometown -->
+    		<ImageView
+        		android:id="@+id/img_hometown"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:contentDescription="@string/hometown"
+        		android:src="@drawable/ic_hometown"
+        		android:layout_alignBottom="@+id/hometown"
+    			android:layout_marginTop="7dp"
+    			android:inputType="numberSigned" />
+    
+    		<EditText
+   				android:id="@+id/hometown"
+    			android:layout_width="fill_parent"
+   				android:layout_height="wrap_content"
+    			android:hint="@string/hometown"
+    			android:inputType="text"
+    			android:layout_below="@+id/lastname"
+    			android:layout_toRightOf="@+id/img_hometown"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginTop="7dp" />
+    
+    		<!-- Phone -->
+    		<ImageView
+        		android:id="@+id/img_phone"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:contentDescription="@string/phone"
+        		android:src="@drawable/ic_phone"
+        		android:layout_alignBottom="@+id/phone"
+    			android:layout_marginTop="7dp" />
+    
+    		<EditText
+   				android:id="@+id/phone"
+    			android:layout_width="fill_parent"
+   				android:layout_height="wrap_content"
+    			android:hint="@string/phone"
+    			android:inputType="phone"
+    			android:layout_below="@+id/hometown"
+    			android:layout_toRightOf="@+id/img_phone"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginTop="7dp" />
+    		
+    		<!-- Email -->
+    		<ImageView
+        		android:id="@+id/img_email"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:contentDescription="@string/email"
+        		android:src="@drawable/ic_email"
+        		android:layout_alignBottom="@+id/email"
+    			android:layout_marginTop="7dp" />
+    
+    		<EditText
+   				android:id="@+id/email"
+    			android:layout_width="fill_parent"
+   				android:layout_height="wrap_content"
+    			android:hint="@string/email"
+    			android:inputType="textWebEmailAddress"
+    			android:layout_below="@+id/phone"
+    			android:layout_toRightOf="@+id/img_email"
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginTop="7dp" />
+    
+   		 	<!-- OBD -->
+    		<TextView
+        		android:id="@+id/tv_obd"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/obd"
+        		android:textSize="20sp"
+        		android:layout_below="@+id/img_email"
+        		android:layout_marginTop="25dp" />
+    
+    		<Switch
+    			android:id="@+id/tBtn_obd"
+    			android:layout_width="wrap_content"
+    			android:switchMinWidth="150dp"
+    			android:layout_height="wrap_content"
+    			android:layout_alignBottom="@+id/tv_obd"
+    			android:textOn="An"
+   	 			android:textOff="Aus"
+    			android:layout_centerHorizontal="true" />
+    
+    		<Button
+        		android:id="@+id/btn_save"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/save"
+        		android:layout_below="@+id/tBtn_obd"
+        		android:layout_centerHorizontal="true"
+        		android:layout_marginTop="20dp"
+        		android:onClick="saveSettings" />
+   		</RelativeLayout>
+	</LinearLayout>
+</ScrollView>

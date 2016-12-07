@@ -1,0 +1,93 @@
+/*********************************************************************************
+		 * Memory Operations (author ts) :: NOT DELETE THIS SECTION IN DEV
+		 *********************************************************************************/
+		UserData user = new UserData(this);
+
+		// Einmal aufrufen, wenn App zum aller ersten mal gestartet wird. Jeder
+		// weitere Aufruf überschreibt die kompletten Daten (default settings)
+		// Anschließend muss geprüft werden ob bei getUserMail() null geliefert
+		// wird, ist das der Fall, muss der Nutzer manuell seine E-Mail Adresse
+		// eintragen, via setUserMail(). Zusätzlich muss per getMobileNumber()
+		// geprüft werden, ob null oder Leerstring ("") geliefert wird. Ist das
+		// der Fall muss der Nutzer via setMobileNumber() die Mobile Nummer
+		// manuell setzen. Ohne gültige Mail-Adresse und Mobile Nummer darf die
+		// App nicht weiter ausgeführt werden(!!!)
+		Log.d("init_userData", "First time when user starts the app");
+		String deviceMail = user.getDeviceMail();
+		String deviceNumber = user.getDeviceMNumber();
+		if (deviceMail != null && deviceNumber != null) {
+			user.initUser(deviceMail, deviceNumber);
+		} else {
+			// TODO: Device Mail is empty OR/AND Device Number is empty
+		}
+
+		// Nutzer Daten ändern, E-Mail Adresse und Mobile Number nur ändern,
+		// wenn null bzw. bei Mobile Number kann auch Leerstring zurück
+		// kommen
+		// ("")
+		Log.d("change_userData", "Change the user data set");
+		user.setFirstname("Tobias");
+		user.setLastname("Straub");
+		user.setMobileNumber("4915156108537");
+		user.setHometownZip("78136");
+		user.setUserMail("t.straub@hs-furtwangen.de");
+
+		// Bei jedem App-Start ausführen, prüft ob Mail Adresse im Google Konto
+		// geändert wurde, und wenn ja wird diese entsprechend in den
+		// Einstellungen persistiert
+		user.checkMailChange();
+
+		// User Daten auslesen, Doku beachten
+		Log.d("read_userData", "Read user data");
+		String loggingU = "email address: " + user.getUserMail() + ", firstname: " + user.getFirstname() + ", lastname: " + user.getLastname()
+				+ ", mobileNumber: " + user.getMobileNumber() + ", hometownZip: " + user.getHometownZip();
+		Log.d("read_userData_user", loggingU);
+
+		DataAccessHandler sHandler = new DataAccessHandler(this);
+
+		// openDB() immer(!) NUR in onStart() ausführen
+		sHandler.openDB();
+
+		// Nur aufrufen, wenn die App mit schwerwiegendem Ausnahmefehler beendet
+		// werden soll (z.B. weil Datenbank nicht geöffnet werden kann)
+		// => IssueNotification.fatalError(this);
+
+		Log.d("read_route_gpsList", "Read a list of gps data by given route_id");
+		List<EntityGPS> gpsSet = sHandler.getRouteGps(1);
+		// getRouteGps(id); liefert null zurück, falls Datensatz nicht gefunden
+		// wurde, unbedingt abfragen => sonst NullPointerException => Absturz
+		for (EntityGPS g : gpsSet) {
+			String logging1 = "gpsId: " + g.getGpsId() + ", routeId: " + g.getRouteId() + ", timestamp: " + g.getTimestamp() + ", lat: " + g.getLat()
+					+ ", lon: " + g.getLon();
+			Log.d("read_route_gpsList_gps", logging1);
+		}
+
+		// Liefert null zurück, falls Datensatz nicht gefunden wurde, unbedingt
+		// abfragen => sonst NullPointerException => Absturz
+		Log.d("reading_route", "Reading one route");
+		EntityRoute route = sHandler.getRoute(1);
+		String logging = "routeId: " + route.getRouteId() + ", timestamp: " + route.getTimestamp() + ", startLat: " + route.getStartLat()
+				+ ", startLon: " + route.getStartLon() + ", endPoint: " + route.getEndPoint();
+		Log.d("reading_route_route", logging);
+
+		Log.d("reading_all_routes", "Reading all routes");
+		List<EntityRoute> routes = sHandler.getAllRoutes();
+		// getAllRoutes(); liefert null zurück, falls keine Datensätze gefunden
+		// wurden, unbedingt abfragen => sonst NullPointerException => Absturz
+		for (EntityRoute r : routes) {
+			String logging2 = "route_id: " + r.getRouteId() + ", timestamp: " + r.getTimestamp() + ", startLat: " + r.getStartLat() + ", startLon: "
+					+ r.getStartLon() + ", endPoint: " + r.getEndPoint();
+			Log.d("reading_all_routes_route", logging2);
+		}
+
+		// Letzte id, sonst -1 wenn kein Datensatz vorhanden
+		Log.d("last_route_id", Integer.toString(sHandler.getLastAddedRouteId()));
+
+		// Letzte id, sonst -1 wenn kein Datensatz vorhanden
+		Log.d("last_gps_id", Integer.toString(sHandler.getLastAddedGpsId()));
+
+		// closeDB() immer(!) NUR in onStop() ausführen
+		sHandler.closeDB();
+		/*********************************************************************************
+		 * Memory Operations (author ts) :: NOT DELETE THIS SECTION IN DEV
+		 *********************************************************************************/

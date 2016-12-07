@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_verifyUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/note_verify_code"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center" />
+    
+     <EditText
+        android:id="@+id/input_verify_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned" />  
+    
+     <Button
+        android:id="@+id/btn_send_verify_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_code" />
+    
+	<TextView
+		android:id="@+id/textView_info_number"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/input_your_device_number"
+		android:layout_marginTop="18dp"
+		android:layout_marginLeft="5dp"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		android:visibility="gone"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<TextView
+			android:id="@+id/textView_desc_number"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/your_device_number"
+			android:layout_marginTop="18dp"
+			android:layout_marginLeft="5dp"
+			android:visibility="gone"
+			android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    	<EditText
+			android:id="@+id/input_number"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginTop="15dp"
+			android:layout_marginLeft="5dp"
+			android:hint="@string/example_number"
+			android:visibility="gone"
+			android:inputType="number" />
+    </LinearLayout>
+
+	<Button
+		android:id="@+id/btn_send_number"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_gravity="center_horizontal"
+		android:visibility="gone"
+		android:text="@string/send" />
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_background1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/background1"
+                android:gravity="center_horizontal|center_vertical"
+                android:scaleType="centerCrop"
+                android:src="@drawable/welt" />
+
+            <Button
+                android:id="@+id/btn_no_hfu_student"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="14dp"
+                android:text="@string/no_hfu_student"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btn_hfu_student"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_no_hfu_student"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="16dp"
+                android:text="@string/hfu_student"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/text_welcome_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/welcome_back"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="83dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    android:text="@string/app_name1"
+                    android:textColor="@color/primary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="10dp"
+                    android:text="@string/app_name2"
+                    android:textColor="@color/primary"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/img_werdmobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="@string/logo"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="36dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/ic_launcher"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/text_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/your_email_address"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btn_parse_mail"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="30dp"
+                android:background="#88676767"
+                android:ems="10"
+                android:hint="@string/maxmustermann"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/text_email_hfu_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/input_email"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/input_email"
+                android:background="#88676767"
+                android:text="@string/hsfurtwangende"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_parse_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="141dp"
+                android:text="@string/send"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="HFUwerdMobil" parent="android:Theme.Holo.Light">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:spinnerItemStyle">@style/spinnerItemStyle</item>
+    </style>
+    
+    <style name="spinnerItemStyle">
+    	<item name="android:textSize">25sp</item>
+    </style>
+</resources>

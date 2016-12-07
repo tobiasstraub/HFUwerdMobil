@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:fillViewport="true">
+	<LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:weightSum="3">
+    
+    	<LinearLayout
+       	 	android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:layout_weight="1">
+        
+		<fragment
+		    android:id="@+id/map"
+		    android:name="com.google.android.gms.maps.MapFragment"
+		    android:layout_width="match_parent"
+		    android:layout_height="352dp" />
+        
+		</LinearLayout>
+    
+		<RelativeLayout
+    		android:layout_width="match_parent"
+    		android:layout_height="0dp"
+    		android:orientation="vertical"
+    		android:layout_marginTop="10dp"
+    		android:layout_marginLeft="10dp"
+    		android:layout_weight="2" >
+
+	   	 	<!-- OBD-INFOS -->
+    		<TextView
+        		android:id="@+id/route_details_obd"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/routen_infos"
+        		android:textSize="27sp"
+				android:layout_centerHorizontal="true" />
+    
+    		<!-- START+DESTINATION -->
+    		<TextView
+        		android:id="@+id/start_destination"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/start_and_destination"
+        		android:textSize="20sp"
+        		android:layout_below="@+id/route_details_obd"
+        		android:layout_centerHorizontal="true" />
+    
+    		<!-- Date -->
+    		<TextView
+        		android:id="@+id/route_details_date"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/no_date"
+        		android:textSize="20sp"
+        		android:layout_below="@+id/start_destination"
+        		android:layout_centerHorizontal="true"
+        		android:layout_marginBottom="10dp" />
+    
+    		<!-- Desc: Fahrtdauer in Min -->
+    		<TextView
+        		android:id="@+id/route_details_min"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/travel_time"
+        		android:textSize="20sp"
+        		android:layout_below="@+id/route_details_date"
+        		android:visibility="gone" /><!-- delete visibility, after the function exist -->
+    		
+    		<!-- Fahrtdauer in Min -->
+    		<TextView
+        		android:id="@+id/rd_min"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/no_detail"
+        		android:textSize="20sp"
+        		android:layout_below="@+id/route_details_date"
+        		android:layout_toRightOf="@+id/route_details_min"
+        		android:visibility="gone" /><!-- delete visibility, after the function exist -->
+    
+    		<!-- Desc: Fahrtstrecke in KM -->
+    		<TextView
+        		android:id="@+id/route_details_km"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/route_length"
+        		android:textSize="20sp"
+        		android:layout_below="@+id/route_details_min"
+        		android:visibility="gone" /><!-- delete visibility, after the function exist -->
+    		
+    		<!-- Fahrtstrecke in KM -->
+    		<TextView
+        		android:id="@+id/rd_km"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/no_detail"
+        		android:textSize="20sp"
+        		android:layout_below="@+id/route_details_min"
+        		android:layout_toRightOf="@+id/route_details_km"
+        		android:visibility="gone" /> <!-- delete visibility, after the function exist -->
+    
+   	 		<!-- Desc: Durchschnittsgeschw. -->
+   			<TextView
+        		android:id="@+id/route_details_kmh"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/average_speed"
+        		android:textSize="20sp"
+        		android:layout_below="@+id/route_details_km" />
+   			
+   			<!-- Durchschnittsgeschw. -->
+   			<TextView
+        		android:id="@+id/average_speed"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/no_detail"
+        		android:textSize="20sp"
+        		android:layout_below="@+id/route_details_km"
+        		android:layout_toRightOf="@+id/route_details_kmh" />
+    
+   	 		<!-- Desc: Verbrauch -->
+    		<TextView
+        		android:id="@+id/route_details_consumption"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/wastage"
+        		android:textSize="20sp"
+        		android:layout_below="@+id/route_details_kmh" />
+    		
+    		<!-- Verbrauch -->
+    		<TextView
+        		android:id="@+id/average_consumption"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/no_detail"
+        		android:textSize="20sp"
+        		android:layout_below="@+id/route_details_kmh"
+        		android:layout_toRightOf="@+id/route_details_consumption" />
+		</RelativeLayout>
+	</LinearLayout>
+</ScrollView>

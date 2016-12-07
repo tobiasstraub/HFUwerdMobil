@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HFUwerdMobil!</string>
+    <string name="authentification">HFUwerdMobil!</string>
+    <string name="choose_route">Route wählen</string>
+    <string name="record_route">Route wird aufgezeichnet..</string>
+    <string name="route_details">Routendetails</string>
+    <string name="about">Über</string>
+    <string name="driven_routes">gefahrene Routen</string>
+    <string name="help">Hilfe</string>
+    <string name="imprint">Impressum</string>
+    <string name="settings">Einstellungen</string>
+    <string name="user_verify">Verifizierung</string>
+    
+    <string name="menu_home">Route wählen</string>
+    <string name="menu_driven_routes">Routendetails</string>
+    <string name="menu_settings">Einstellungen</string>    
+    <string name="menu_about">Über</string>
+    <string name="menu_imprint">Impressum</string>
+    <string name="menu_help">Hilfe</string>
+    
+    <string name="firstname">Vorname</string>
+    <string name="lastname">Nachname</string>
+    <string name="hometown">PLZ</string>
+    <string name="phone">Telefon</string>
+    <string name="obd">OBD</string>
+    <string name="save">Speichern</string>
+    <string name="savedSettings">Einstellungen gespeichert</string>
+    <string name="contentDesc_user_picture">Benutzerbild</string>
+    
+    <string name="route_start">Startort</string>
+    <string name="route_seperator">---</string>
+    <string name="route_end">Zielort String</string>
+    <string name="route_date">Datum</string>
+    <string name="routen_infos"><b>Routen-Infos</b></string>
+    <string name="start_and_destination">Startort - Zielort</string>
+    <string name="no_date">Kein Datum vorhanden</string>
+    <string name="no_detail"> k.A.</string>
+    <string name="travel_time">Fahrzeit:</string>
+    <string name="route_length">Fahrstrecke:</string>
+    <string name="average_speed">Durchschnittsgeschwindigkeit:</string>
+    <string name="wastage">Verbrauch:</string>
+    
+    <string name="dialog_fatalError_title">Kritischer Fehler</string>
+    <string name="dialog_fatalError_message">Es ist ein schwerwiegender Fehler aufgetreten. Die App muss beendet werden.</string>
+    <string name="dialog_fatalError_terminate">Okay.</string>
+    <string name="dialog_primaryMailChanged_title">E-Mail ändern</string>
+    <string name="dialog_primaryMailChanged_message">Die E-Mail Andresse Ihres Android Gerätes hat sich verändert. Soll die neue E-Mail Adresse auch als neue App-E-Mail-Adresse verwendet werden?</string>
+    <string name="dialog_primaryMailChanged_yes">Ja</string>
+    <string name="dialog_primaryMailChanged_no">Nein danke</string>
+    <string name="dialog_primaryMailChangedSuccessfully_title">E-Mail geändert</string>
+    <string name="dialog_primaryMailChangedSuccessfully_message">Die App-E-Mail Adresse wurde durch die neue E-Mail Adresse Ihres Android Gerätes ersetzt.</string>
+    <string name="dialog_primaryMailChangedSuccessfully_okay">Okay</string>
+    <string name="dialog_locationProviderNotAvailable_title">Standorterfassung fehlgeschlagen</string>
+    <string name="dialog_locationProviderNotAvailable_message">Wir können deinen aktuellen Standort weiterhin nicht mehr erfassen. Bitte sorge dafür, dass Du GPS während der Routen Aufzeichnung nicht deaktivierst. Wir beenden nun die aktuelle Routen Aufzeichnung.</string>
+    <string name="dialog_locationProviderNotAvailable_okay">Okay</string>
+    <string name="dialog_inputManuallyMail_title">Deine E-Mail Adresse</string>
+    <string name="dialog_inputManuallyMail_message">Wir konnten die E-Mail Adresse deines Google Accounts auf dem Android Gerät nicht auslesen. Bitte gib deine E-Mail Adresse ein:</string>
+    <string name="dialog_inputManuallyMail_okay">Okay</string>
+    <string name="dialog_verifycodeInputFailed_title">Verifizierung fehlerhaft</string>
+    <string name="dialog_verifycodeInputFailed_message">Der eingegebene Verifizierungscode stimmt leider nicht mit dem Code überein, den wir dir per E-Mail geschickt haben.</string>
+    <string name="dialog_verifycodeInputFailed_okay">Erneut versuchen</string>
+    <string name="dialog_networkFailed_title">Fehlerhafter Vorgang</string>
+    <string name="dialog_networkFailed_message">Keine Verbindung mit dem Netzwerk möglich. Bitte prüfe deine Internetverbindung. (developer note: no internet connectior or no connection to server available)</string>
+    <string name="dialog_networkFailed_okay">Okay</string>
+    <string name="dialog_emailNotValid_title">E-Mail nicht korrekt</string>
+    <string name="dialog_emailNotValid_message">Die eingegebene E-Mail ist nicht korrekt. Bitte überprüfe deine Eingabe.</string>
+    <string name="dialog_emailNotValid_okay">Weiter</string>
+    <string name="dialog_deviceNumberNotValid_title">Handynummer nicht korrekt</string>
+    <string name="dialog_deviceNumberNotValid_message">Bitte eine korrekte Handynummer (mit mindestens 6 Zahlen) eingeben.</string>
+    <string name="dialog_deviceNumberNotValid_okay">Are you serious?</string>
+    
+    
+    <string name="activate_gps">Bitte GPS aktivieren</string>
+    
+    <string name="aktueller_standort">aktueller Standort</string>
+    <string name="start_route">Route starten</string>
+    <string name="destination_chosen">Startpunkt ausgewählt</string>
+    
+    <string name="background1">Hintergrund1</string>
+ 	<string name="hfu_student">Mit HFU Mailkonto anmelden</string>
+  	<string name="no_hfu_student">Mit externem Mailkonto anmelden</string>
+  	<string name="logo">HFUWerdmobil!</string>
+  	<string name="app_name1">HFU</string>
+  	<string name="app_name2">werdMobil!</string>
+  	
+  	<string name="furtwangen">HFU Furtwangen</string>
+  	<string name="schwenningen">HFU Schwenningen</string>
+  	<string name="tuttlingen">HFU Tuttlingen</string>
+  	<string name="home">nach Hause</string>
+  	
+  	<string-array name="selectable_locations">
+        <item>@string/furtwangen</item>
+        <item>@string/schwenningen</item>
+        <item>@string/tuttlingen</item>
+        <item>@string/home</item>
+    </string-array>
+    
+  	<string name="refresh">Refresh</string>
+  	<string name="bluetooth">Bluetooth</string>
+  	<string name="recent_routes">Zuletzt gefahrene Routen</string>
+  	<string name="record_route_info">Deine Fahrt wird nun aufgezeichnet und in Echtzeit an unsere Server übertragen. Solange Du die Übertragung nicht beendest, können Dich potenzielle Mitfahrer anrufen.</string>
+    <string name="endRouteDestination">Ich habe mein Ziel erreicht!</string>
+    <string name="maxmustermann">max.mustermann</string>
+    <string name="your_email_address">Deine E-Mail Adresse:</string>
+    <string name="hsfurtwangende">\@hs-furtwangen.de</string>
+    <string name="welcome_back">Willkommen zurück, </string>
+    <string name="send">Absenden</string>
+    <string name="email">E-Mail</string>
+    
+    <string name="input_your_device_number">Bitte Handynummer angeben</string>
+  	<string name="your_device_number">Deine Handynummer:</string>
+  	<string name="example_number">01673235287</string>
+  	
+  	<string name="note_verify_code">Wir haben dir soeben einen Verifizierungscode an deine E-Mail geschickt. Bitte gib diesen Code hier ein, damit wir Dir deine E-Mail Adresse zuordnen können.</string>
+  	<string name="check_code">Verifizierung abschließen</string>
+  	
+  	<string name="hfu">HFU</string>
+  	<string name="tobiasstraub">Tobias Straub</string>
+  	<string name="susanneroos">Susanne Roos</string>
+  	<string name="matthiasfeichtmeier">Matthias Feichtmeier</string>
+  	<string name="thomaslesinski">Thomas Lesinski</string>
+  	<string name="veronikakinzel">Veronika Kinzel</string>
+  	<string name="hfuwerdmobillogo">HFUwerdmobil!</string>
+  	<string name="no_routes_to_show">bisher keine Route</string>
+  	<string name="is_destination_yet">Sie sind bereits am Ziel</string>
+  	<string name="is_destination">Sie haben das Ziel erreicht</string>
+  	<string name="no_data_available">Keine Routendaten aufgezeichnet</string>
+  	
+    <string name="help_content">
+        <![CDATA[<html>
+	<head>
+	<title>FAQ</title>
+	</head><body>
+	<p><b>Frequently Asked Questions</b></p>
+	<p><b>Wie funktioniert die Anmeldung?</b></p>
+<p>Die App HFUwerdMobil! ist f&uuml;r Studierende der Hochschule Furtwangen University konzipiert.
+Bei der ersten Anmeldung fragt die App ob ein HFU Account vorhanden ist oder nicht. Falls das
+der Fall ist wird der Nutzer aufgefordert seine HFU E-Mailadresse einzugeben.
+Falls kein HFU Account vorhanden ist pr&uuml;ft die App ob ein Google Account vorhanden ist und
+f&uuml;gt diesen dann als User-E-Mailadresse hinzu. Ist kein Google Account vorhanden wird der
+Nutzer zur Eingabe einer validen E-Mailadresse aufgefordert. 
+Derzeit ist es unbedingt notwendig, dass du deinen HFU webmail Account verwendest, da der volle
+Funktionsumfang der Anwendung nur f&uuml;r HFU Studierende zur Verf&uuml;gung steht.</p>
+
+<p><b>Wo gebe ich meine pers&ouml;nlichen Daten an?</b></p>
+<p>Unter der Option &quot;Einstellungen&quot; kannst du deinen Vor- und Nachnamen, sowie deine Postleitzahl
+und Mobilfunknummer hinterlegen (f&uuml;r Community-Funktionen ben&ouml;tigt).
+Hier kannst du auch die Bluetooth Verbindung zu OBD ein/auszuschalten.</p> 
+
+<p><b>Wo trifft sich die HFUwerdmobil! Community?</b></p>
+<p>Unter www.hfuwerdmobil.de kannst du dich registrieren und Teil der Community werden!</p>
+
+<p><b>Wie w&auml;hle ich eine Route?</b></p>
+<p>Nach erfolgreicher Anmeldung auf der Startseite gelangt der Nutzer auf &quot;Route w&auml;hlen&ldquo;. 
+Das erste Feld in der Anzeige ist der aktuelle mittels GPS ermittelte Standort des Nutzers.
+Er dient als Ausgangslage f&uuml;r seine Fahrt. Im zweiten Feld kann nun eine Auswahl zum Ziel getroffen werden.
+Dies geschieht mittels einer Dropdownliste, in welcher zwischen folgenden Optionen gew&auml;hlt werden kann:
+HFU Furtwangen, HFU Villingen-Schwenningen, HFU Tuttlingen und Heimatort. 
+Das Feld Heimatort bezieht sich auf den in den Benutzereinstellungen hinterlegten Wohnort.
+Alternativ kann in der Anzeige der zuletzt gefahrenen Routen eine Auswahl getroffen werden.</p> 
+
+<p><b>Wo sehe ich meine bereits gefahrenen Routen?</b></p>
+<p>Die &Uuml;bersicht der zuletzt gefahrenen Routen befindet sich unter &quot;Route w&auml;hlen&quot;. Dort werden diese dem Nutzer 
+in Textform aufgelistet. Hier ist neben Start- und Endpunkt, Datum und Uhrzeit aufgef&uuml;hrt.
+Durch Klick auf eine dort aufgef&uuml;hrte Route werden die zugeh&ouml;rigen Routendetails aufgerufen.</p> 
+
+<p><b>Wie starte ich die Aufzeichnung?</b></p>
+<p>Ebenfalls unter &quot;Route w&auml;hlen&quot; findest du den Button &bdquo;Route starten&ldquo;. Damit beginnt die App nun 
+mit der Aufzeichnung der gefahrenen Route. Im Hintergrund werden kontinuierlich 
+die aktuellen GPS-Koordinaten ermittelt und zur sp&auml;teren Dar-stellung der Route in der 
+serverseitigen Datenbank abgespeichert.</p>
+
+<p><b>Wie wird die Aufzeichnung beendet?</b></p>
+<p>Die Aufzeichnung der Fahrtstrecke terminieren: Die Route wird beendet wenn der Nutzer in den n&auml;chsten Umkreis
+der entsprechend gew&auml;hlten Hochschule gelangt ist. In diesem Fall erkennt die App automatisch, dass das Ziel
+erreicht wurde. Sofern der Heimatort des Fahrers das Ziel ist, muss der Nutzer die App manuell &uuml;ber den 
+Button &bdquo;Ich habe mein Ziel erreicht!&ldquo; stoppen.</p>
+
+<p><b>Wo finde ich die Routendetails?</b></p>
+<p>Nachdem die Aufzeichnung der Route beendet wurde, zeigt dir die App nun abschlie&szlig;end einen Google Maps 
+Kartenausschnitt der gefahrenen Route inklusive Markern an Start und Ziel.
+Au&szlig;erdem werden dir Durchschnittsgeschwindigkeit und -verbrauch angezeigt, wenn du 
+w&auml;hrend der Aufzeichnung OBD aktviert hattest.</p>
+
+<p><b>Was ist eigentlich dieses OBD?</b></p>
+<p>On-Board-Diagnose (OBD) ist ein Fahrzeugdiagnosesystem. Die 16polige OBD-2-Diagnosebuchse im Fahrzeug
+(seit 2001 f&uuml;r Benziner bzw. 2004 f&uuml;r Diesel Neuzulassungen verpflichtend) kann mittels eines entsprechenden
+Adapters ausgelesen werden. Dieser kommuniziert &uuml;ber Bluetooth mit der App und &uuml;bermittelt Daten zur 
+Fahrgeschwindigkeit und zum Treibstoffverbrauch.</p>]]></string>
+    <string name="imprint_content">
+	<![CDATA[<html>
+	<head>
+	<title>Impressum</title>
+	</head>
+	<body>
+	
+	<p>Angaben gem&auml;&szlig; &sect; 5 TMG:</p>
+	<p><b>Hochschule Furtwangen University</b><br />
+	Robert-Gerwig-Platz 1<br />
+	78120 Furtwangen<br />
+	Vertreten durch:</p>
+	
+	<p>[Vertreten durch: Name, Anschrift]<br />
+	Kontakt:</p>
+	
+	<p>Telefon: xxx</br>
+	Telefax: xxx</br>
+	E-Mail: t.straub@hs-furtwangen.de</p>
+	<p><b>Quellenangaben f&uuml;r die verwendeten Bilder und Grafiken:</b></p>
+	
+	<p><b>Grafik: &quot;The Travel Bug&quot;<br />
+	Autor: Pascal Mau (Fakult&auml;t DM)</b><br />
+	unter Verwendung der unter Freier Lizenz stehenden Vektorgrafik &quot;World&quot; von <br />
+	MacDaddy/Vecteezy.com</p>
+	
+	
+	<b>Haftungsausschluss</b> (Disclaimer)</p>
+	<p>Quelle: http://www.e-recht24.de</p>
+	<b>Haftung f&uuml;r Inhalte</b></p>
+	<p>Als Diensteanbieter sind wir gem&auml;&szlig; § 7 Abs.1 TMG f&uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, &uuml;bermittelte oder gespeicherte fremde Informationen zu &uuml;berwachen oder nach Umst&auml;nden zu forschen, die auf eine rechtswidrige T&auml;tigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unber&uuml;hrt. Eine diesbez&uuml;gliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung m&ouml;glich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+	<p><b>Haftung f&uuml;r Links</b></p>
+	<p>Unser Angebot enth&auml;lt Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb k&ouml;nnen wir f&uuml;r diese fremden Inhalte auch keine Gew&auml;hr &uuml;bernehmen. F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf m&ouml;gliche Rechtsverst&ouml;&szlig;e &uuml;berpr&uuml;ft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+	<p><b>Urheberrecht</b></p>
+	<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au&szlig;erhalb der Grenzen des Urheberrechtes bed&uuml;rfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f&uuml;r den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+	
+	
+	<p><b>Datenschutzerkl&auml;rung:</b><br />
+	<b>Datenschutz</b></p>
+	<p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten m&ouml;glich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit m&ouml;glich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdr&uuml;ckliche Zustimmung nicht an Dritte weitergegeben.
+	Wir weisen darauf hin, dass die Daten&uuml;bertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitsl&uuml;cken aufweisen kann. Ein l&uuml;ckenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht m&ouml;glich.
+	Der Nutzung von im Rahmen der Impressumspflicht ver&ouml;ffentlichten Kontaktdaten durch Dritte zur &uuml;bersendung von nicht ausdr&uuml;cklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdr&uuml;cklich widersprochen. Die Betreiber der Seiten behalten sich ausdr&uuml;cklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
+	
+	<p><b>Auskunft, L&ouml;schung, Sperrung</b></p>
+	<p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft &uuml;ber Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empf&auml;nger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder L&ouml;schung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten k&ouml;nnen Sie sich jederzeit &uuml;ber die im Impressum angegeben Adresse des Webseitenbetreibers an uns wenden.</p>]]>
+	</string>
+    
+    
+    </resources>
